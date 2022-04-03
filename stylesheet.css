@@ -1,18 +1,10 @@
-
-
-#container {
-  
+.container {
+  width: 350px;
+  height: 350px;
+  border-style: solid;
+  position: relative;
   display: flex;
   flex-wrap: wrap;
-  flex: 1 1 auto
-  border: 1px;
-  width: 400px;
-  height: fit-content;
-  border-color: black;
-  border-style: solid;
-  padding: 0px 0px 0px 0px;
-  
-
-
 }
+
 

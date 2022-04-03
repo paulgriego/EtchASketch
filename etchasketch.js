@@ -1,14 +1,16 @@
-function createDiv (numberGrid) 
-  {
-  while(i<(numberGrid*numberGrid)) {
-  i++;
-  const newDiv = document.createElement("div");
-  newDiv.className="grid";
-  document.getElementById("container").appendChild(newDiv);
+function generateGrid (square) {
+  var container = document.createElement("div");
+  container.className="container";
+  document.body.appendChild(container);
+  var grid = square *square;
+  for (i=0; i<grid; i++) {
+    var squareGrid =document.createElement("div");
+    squareGrid.className = "squaregrid";
+    squareGrid.style.width = ((350)/(square)) + "px";
+    container.appendChild(squareGrid);
   }
 } 
-let numberGrid=0;
-let i=0; 
-createDiv(16);
+generateGrid(20);
 
+ 
 
