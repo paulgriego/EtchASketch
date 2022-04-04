@@ -38,7 +38,14 @@ button {
   font-family: 'Courier New', Courier, monospace;
   border-radius: 10px;
 }
+button:hover {
+ background-color: gold;
+}
 #colorchanger {
   border-radius: 10px;
+
+}
+#colorchanger:hover {
+  background-color: gold;
 
 }
