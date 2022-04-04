@@ -36,4 +36,6 @@ function newGrid() {
    generateGrid(gridsize);
 }
 }
+
+
 generateGrid(16);

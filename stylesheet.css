@@ -1,12 +1,13 @@
 #container {
   width: 550px;
   height: 550px;
-  border-style: solid;
-  border-color: #d42323;
+  border-style: ridge;
+  border-color: #e23b3b;
   border-width: 20px;
   position: relative;
   display: flex;
   flex-wrap: wrap;
+  margin-top: 5px;
 }
 
 .squaregrid {
@@ -17,15 +18,27 @@
 .titlebuttons {
   display: flex;
   justify-content: space-between;
+  gap: 20px;
+  
 }
 body {
   display: flex;
   flex-direction: column;
-  align-items: center;  
+  align-items: center;
+  background-color: #d61515;
 }
 h1 {
   margin-bottom: 0%;
   font-family: 'Brush Script MT', cursive;
+  text-shadow: 2px 2px #423e3e;
   color: gold;
+
+}
+button {
+  font-family: 'Courier New', Courier, monospace;
+  border-radius: 10px;
+}
+#colorchanger {
+  border-radius: 10px;
 
 }
