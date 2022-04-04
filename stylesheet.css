@@ -28,14 +28,17 @@ body {
   background-color: #d61515;
 }
 h1 {
-  margin-bottom: 0%;
+  margin-bottom: 15px;
   font-family: 'Brush Script MT', cursive;
+  text-decoration-line: underline;
+  text-underline-offset: 5px;
   text-shadow: 2px 2px #423e3e;
   color: gold;
 
 }
 button {
   font-family: 'Courier New', Courier, monospace;
+  font-style: italic;
   border-radius: 10px;
   border-style: ridge;
   padding: 10px;
