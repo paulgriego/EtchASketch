@@ -1,10 +1,16 @@
-.container {
-  width: 350px;
-  height: 350px;
+#container {
+  width: 550px;
+  height: 550px;
   border-style: solid;
   position: relative;
   display: flex;
   flex-wrap: wrap;
 }
 
-
+.squaregrid {
+  outline: 1px solid grey;
+  background-color: white;
+}
+.red {
+  background: color;
+}

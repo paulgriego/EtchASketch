@@ -1,16 +1,39 @@
 function generateGrid (square) {
-  var container = document.createElement("div");
-  container.className="container";
+  let container = document.createElement("div");
+  container.id="container";
   document.body.appendChild(container);
-  var grid = square *square;
+  let grid = square *square;
   for (i=0; i<grid; i++) {
-    var squareGrid =document.createElement("div");
+    let squareGrid =document.createElement("div");
     squareGrid.className = "squaregrid";
-    squareGrid.style.width = ((350)/(square)) + "px";
+    squareGrid.style.width = ((550)/(square)) + "px";
     container.appendChild(squareGrid);
   }
-} 
-generateGrid(20);
+  let inputs = document.getElementsByClassName("squaregrid");
+  for(let i = 0; i < inputs.length; i++) {
+    inputs[i].addEventListener("mouseover",function(){inputs[i].style.backgroundColor = pickColor()})
+  }
+}
 
- 
+function pickColor () {
+    return color='#'+Math.floor(Math.random()*16777215).toString(16);
+}
 
+function removeContainer() {
+  var child = document.getElementById('container');
+  child.parentNode.removeChild(child);
+}
+
+function newGrid() {
+   
+   let gridsize = prompt("What size grid? *Note max is 100 per side!");
+
+   if (gridsize>100 || gridsize<=0) {
+     alert("Sorry the grid can be no less then 0 or bigger then 100!");
+   }
+   else  {
+   removeContainer();
+   generateGrid(gridsize);
+}
+}
+generateGrid(16);
