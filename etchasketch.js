@@ -37,5 +37,11 @@ function newGrid() {
 }
 }
 
+function clearCurrentGrid() {
+  let inputs = document.getElementsByClassName("squaregrid");
+  for(let i = 0; i < inputs.length; i++) {
+    inputs[i].style.backgroundColor = "white";
+  }
+}
 
 generateGrid(16);
