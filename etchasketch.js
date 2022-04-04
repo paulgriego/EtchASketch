@@ -17,8 +17,6 @@ function generateGrid (square) {
 
 function pickColor () {
       return rgb = document.getElementById("colorchanger").value;
-    
-    
 }
 
 function removeContainer() {
