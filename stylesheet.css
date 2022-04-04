@@ -17,7 +17,7 @@
 
 .titlebuttons {
   display: flex;
-  justify-content: space-between;
+  align-items: center;
   gap: 20px;
   
 }
@@ -37,13 +37,23 @@ h1 {
 button {
   font-family: 'Courier New', Courier, monospace;
   border-radius: 10px;
+  border-style: ridge;
+  padding: 10px;
+  border: 2px;
+  border-style: ridge;
+  border-color: black;
 }
 button:hover {
  background-color: gold;
 }
 #colorchanger {
   border-radius: 10px;
+  height: 38px;
+  border: 2px;
+  border-style: ridge;
+  border-color: black;
 
+  
 }
 #colorchanger:hover {
   background-color: gold;
