@@ -11,6 +11,10 @@ function generateGrid (square) {
     container.appendChild(squareGrid);
   }
   colorPicker();
+  document.getElementById("nogridoutline").style.background='white';
+  document.getElementById("gridoutline").style.background='white';
+
+
 }
   
 
@@ -31,6 +35,22 @@ function generateGrid (square) {
     inputs[i].style.outline = "1px grey solid"
    }
   }
+  document.getElementById("gridoutline").style.background='gold';
+  document.getElementById("nogridoutline").style.background='white';
+
+
+ }
+ function noGridOutline() {
+  let inputs = document.getElementsByClassName("squaregrid");
+  for(let i = 0; i < inputs.length; i++) {
+   {
+    inputs[i].style.outline = ""
+   }
+  }
+  document.getElementById("nogridoutline").style.background='gold';
+  document.getElementById("gridoutline").style.background='white';
+
+
  }
 
 
