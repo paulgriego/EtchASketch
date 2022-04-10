@@ -10,9 +10,9 @@
   margin-top: 5px;
 }
 
-.squaregrid {
-  outline: 1px solid grey;
-  background-color: white;
+#idsquaregrid {
+  /* outline: 1px solid grey; */
+  background-color: rgb(255, 255, 255);
 }
 
 .titlebuttons {
@@ -45,6 +45,7 @@ button {
   border: 2px;
   border-style: ridge;
   border-color: black;
+  background-color: white;
 }
 button:hover {
  background-color: gold;
